@@ -14,7 +14,11 @@ export class GenresComponent implements OnInit {
   page: number = 1
   idGarne: any
 
-  constructor(private genreService: GenreService, private activatedRoute: ActivatedRoute, private router: Router) {
+  constructor(
+    private genreService: GenreService,
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+  ) {
 
   }
 

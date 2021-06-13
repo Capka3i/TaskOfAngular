@@ -15,7 +15,9 @@ export class MoviesService {
   }
 
   getMovies(id: number): Observable<INaked> {
-    return this.httpClient.get<INaked>(ursMovies + id)
+    return this.httpClient.get<INaked>(ursMovies,{params:{
+      'page': id+''
+      }})
   }
 
   getDetails(id: number): Observable<IMovie> {

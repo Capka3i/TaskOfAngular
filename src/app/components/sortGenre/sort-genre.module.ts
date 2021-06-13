@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { SortGenreRoutingModule } from './sort-genre-routing.module';
-import { GenresComponent } from './genres/genres.component';
+import {SortGenreRoutingModule} from './sort-genre-routing.module';
+import {GenresComponent} from './genres/genres.component';
 import {MoviesModule} from "../movie/movies.module";
 
 
@@ -16,4 +16,5 @@ import {MoviesModule} from "../movie/movies.module";
     MoviesModule
   ]
 })
-export class SortGenreModule { }
+export class SortGenreModule {
+}

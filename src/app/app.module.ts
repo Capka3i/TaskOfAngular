@@ -21,6 +21,7 @@ import {DetailsComponent} from './components/details/details/details.component';
     HttpClientModule,
     RouterModule.forRoot(rout),
   ],
+
   providers: [],
   exports: [],
   bootstrap: [AppComponent]
