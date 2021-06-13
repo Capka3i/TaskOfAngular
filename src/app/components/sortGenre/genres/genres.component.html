@@ -1,0 +1,4 @@
+<div [className] = "'sortBox'">
+
+  <app-movi [className] = "'theBox'" *ngFor = "let movie of gernMovies" [movie] = "movie">{{movie.title}}</app-movi>
+</div>

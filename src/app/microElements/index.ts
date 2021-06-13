@@ -1,0 +1,5 @@
+export * from './urlMovies'
+export * from './key'
+export * from './linkReourse'
+export * from './imageUrl'
+export * from './rout'

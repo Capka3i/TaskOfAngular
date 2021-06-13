@@ -1,0 +1,13 @@
+<hr>
+<div [className] = "'miniBody'">
+  <h2>{{movi?.title}}</h2>
+  <img [className] = "'images'" src = "{{imageUrl}}{{movi?.poster_path}}" alt = "somePhoto">
+  <p [className] = "'images'">{{movi?.overview}}</p>
+  <h3 [className] = "'images'">Popularity: {{movi?.popularity}}</h3>
+  <h3 [className] = "'images'">Release data:{{movi?.release_date}}</h3>
+  <div>
+    <h3 [className] = "'images'">Rating: {{movi?.vote_average}}/10</h3>
+    <h3 [className] = "'images'">Appreciated:{{movi?.vote_count}}</h3>
+
+  </div>
+</div>

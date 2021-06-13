@@ -1,0 +1,8 @@
+<div [className] = "'sortBox'">
+
+  <app-movi [className] = "'theBox'" *ngFor = "let movie of movies" [movie] = "movie">{{movie.title}}</app-movi>
+
+</div>
+<div [className]="'page'">
+  <app-page-change></app-page-change>
+</div>
