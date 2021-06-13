@@ -3,6 +3,11 @@
   <app-movi [className] = "'theBox'" *ngFor = "let movie of movies" [movie] = "movie">{{movie.title}}</app-movi>
 
 </div>
-<div [className]="'page'">
-  <app-page-change></app-page-change>
+
+
+<div [className] = "'center'">
+  <form #someForm (change)="$event">
+    <button [className] = "'buttonOption'" [value] = "page-1">back</button>
+    <button [className] = "'buttonOption'" [value] = "page+1">next</button>
+  </form>
 </div>

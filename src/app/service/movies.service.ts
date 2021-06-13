@@ -14,7 +14,7 @@ export class MoviesService {
 
   }
 
-  getMovies(id: number = 1): Observable<INaked> {
+  getMovies(id:number): Observable<INaked> {
     return this.httpClient.get<INaked>(ursMovies + id)
   }
 

@@ -1,4 +1,5 @@
 <div [className] = "'buton'">
   <button *ngFor = "let gern of gerne" [routerLink] = "gern.name"
-          (click) = "showGenre(gern)" style = "color:#{{gern.id}}" class="btn btn-outline-primary">{{gern.name}}</button>
+          (click) = "showGenre(gern)" style = "color:blueviolet"
+          class = "btn btn-outline-primary">{{gern.name}}</button>
 </div>
