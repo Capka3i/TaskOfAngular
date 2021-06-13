@@ -1,7 +1,8 @@
-.card{
+.card {
   margin: 10px;
 }
-.textOption{
+
+.textOption {
   overflow: hidden;
   text-overflow: ellipsis;
 }

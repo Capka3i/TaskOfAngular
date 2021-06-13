@@ -12,7 +12,6 @@ export class MoviComponent implements OnInit {
   @Input()
   movie: IMovie
 
-  
   imageUrl = imageUrl
 
   constructor() {

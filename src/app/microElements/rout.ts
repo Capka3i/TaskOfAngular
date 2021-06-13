@@ -9,6 +9,7 @@ export const rout: Routes = [{
 }, {
   path: 'popular/:id', loadChildren: () => import('../components/details/details.module').then(m => m.DetailsModule)
 }, {
-  path: ':genre/popular/:id', loadChildren: () => import('../components/details/details.module').then(m => m.DetailsModule)
+  path: ':genre/popular/:id',
+  loadChildren: () => import('../components/details/details.module').then(m => m.DetailsModule)
 }
 ]

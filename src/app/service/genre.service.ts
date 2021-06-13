@@ -17,7 +17,7 @@ export class GenreService {
     return this.httpClient.get<INaked>(urlGenre)
   }
 
-  getByGenre(gernt: IGerne):Observable<INaked> {
+  getByGenre(gernt: IGerne): Observable<INaked> {
     return this.httpClient.get<INaked>(urlGenreMovies + gernt?.id + urlGenreMoviesEnd)
   }
 }

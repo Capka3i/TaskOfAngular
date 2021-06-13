@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {MoviesService} from "../../../service";
 import {IMovie} from "../../../models";
-import { imageUrl } from 'src/app/microElements';
+import {imageUrl} from 'src/app/microElements';
 
 @Component({
   selector: 'app-details',
@@ -14,9 +14,7 @@ export class DetailsComponent implements OnInit {
   movi: IMovie
   imageUrl = imageUrl
 
-
   constructor(private activatedRoute: ActivatedRoute, private moviesService: MoviesService) {
-
   }
 
   ngOnInit(): void {
