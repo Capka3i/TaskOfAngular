@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {urlGenre, urlGenreMovies, urlGenreMoviesEnd} from "../microElements/urlGenre";
+import {someUrl, urlGanreMoviesEndTest, urlGenre, urlGenreMovies, urlGenreMoviesEnd} from "../microElements/urlGenre";
 import {Observable} from "rxjs";
 import {IGerne, INaked} from "../models";
 
@@ -19,5 +19,10 @@ export class GenreService {
 
   getByGenre(gernt: IGerne): Observable<INaked> {
     return this.httpClient.get<INaked>(urlGenreMovies + gernt?.id + urlGenreMoviesEnd)
+  }
+
+  nextBackPage(page: number, gernt: any): Observable<INaked> {
+    console.log(page, gernt)
+    return this.httpClient.get<INaked>(urlGanreMoviesEndTest + page + someUrl + gernt.id + urlGenreMoviesEnd)
   }
 }

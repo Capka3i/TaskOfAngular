@@ -1,10 +1,14 @@
 .sortBox {
   display: flex;
   flex-wrap: wrap;
-  height: 200px;
   align-content: space-between;
 }
 
 .theBox {
   border: 1px black;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }

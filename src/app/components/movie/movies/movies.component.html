@@ -3,8 +3,6 @@
 </div>
 
 <div [className] = "'center'">
-  <form #someForm (change) = "$event">
-    <button [className] = "'buttonOption'" [value] = "page-1">back</button>
-    <button [className] = "'buttonOption'" [value] = "page+1">next</button>
-  </form>
+  <button [className] = "'buttonOption'" [routerLink] = "" (click) = "someFunc(-1)">back</button>
+  <button [className] = "'buttonOption'" [routerLink] = "" (click) = "someFunc(1)">next</button>
 </div>
